@@ -4,14 +4,13 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  font-size: 3rem;
+  font-size: 10vw;
   font-family: "Orbitron", sans-serif;
 }
 .time {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
-  width: 500px;
 }
 
 .time > div {
@@ -23,7 +22,7 @@ body {
 }
 
 .digi > div.add + div {
-  min-width: 120px;
+  width: 20vw;
   text-align: center;
 }
 .add {
