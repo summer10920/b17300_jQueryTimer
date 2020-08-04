@@ -158,7 +158,10 @@
     }
 
     let findTime = loki.findCook("finaltime");
-    (!findTime) ? loki.setFinal() : loki.getFinal(findTime);
+    if (!findTime) {
+      loki.setFinal();
+      loki.run();
+    } else loki.getFinal(findTime);
     $(".add").click(function () { loki.add(this) });
     $(".add").mousedown(function () {
       let e = this;
